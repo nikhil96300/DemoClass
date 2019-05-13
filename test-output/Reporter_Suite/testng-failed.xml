@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Reporter_Suite]">
+  <listeners>
+    <listener class-name="com.testng.ex.CustomReporter"/>
+  </listeners>
+  <test name="DEMO_REPORT(failed)">
+    <classes>
+      <class name="com.testng.ex.ReportDemo">
+        <methods>
+          <include name="test2"/>
+          <include name="test3"/>
+        </methods>
+      </class> <!-- com.testng.ex.ReportDemo -->
+    </classes>
+  </test> <!-- DEMO_REPORT(failed) -->
+</suite> <!-- Failed suite [Reporter_Suite] -->
